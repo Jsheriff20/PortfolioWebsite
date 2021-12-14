@@ -1,19 +1,29 @@
-import { Typography } from '@material-ui/core'
-import { makeStyles } from '@material-ui/core/styles';
+import { Container, Paper } from '@mui/material'
 import React from 'react'
+import { useTheme, makeStyles } from '@mui/styles';
 
-const useStyles = makeStyles({
+
+const useStyles = makeStyles(theme => ({
     portfolio:{
-        backgroundColor: "#EBEBEB"
-    }
-});
+        height: '100vh',
+        width: "100vw",
+        maxWidth: "1200px",
+        margin: "auto",
+        marginBottom: "100px",
+        backgroundColor: "white"
+    },
+}));
 
 
-export default function Portfolio(){
-    const classes = useStyles();
+export default function Portfolio(props){
+    const theme = useTheme();
+    const classes = useStyles(theme);
+
     return(
-        <Typography className={classes.portfolio}>
-            
-        </Typography>
+        <Paper className={classes.portfolio}>
+            <Container maxWidth="md">
+
+            </Container>
+        </Paper>
     )
 }

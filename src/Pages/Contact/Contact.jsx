@@ -1,24 +1,27 @@
-import { Typography } from '@material-ui/core'
-import { makeStyles } from '@material-ui/core/styles';
+import { Container, Paper } from '@mui/material'
+import {makeStyles} from '@mui/styles';
 import React from 'react'
 import polyImageLight from "../../Media/polyImageLight.jpg"
 
 const useStyles = makeStyles({
     contact:{
-        backgroundImage: `url(${polyImageLight})`,
-        backgroundPosition: 'left', 
-        backgroundSize: 'cover', 
-        backgroundRepeat: 'no-repeat',
-        display: 'flex',
-    }
+        height: '100vh',
+        width: "100vw",
+        maxWidth: "1200px",
+        margin: "auto",
+        backgroundColor: "white"
+    },
+
 });
 
 
 export default function Contact(){
     const classes = useStyles();
     return(
-        <Typography className={classes.contact}>
+        <Paper className={classes.contact}>
+            <Container maxWidth="md">
 
-        </Typography>
+            </Container>
+        </Paper>
     )
 }

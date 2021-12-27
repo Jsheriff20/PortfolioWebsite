@@ -1,0 +1,58 @@
+[
+    {
+        "type": "Work",
+        "date": "2021 - Present",
+        "title": "Software Developer",
+        "subtitle": "Connect Health",
+        "description": "description"
+    },
+    {
+        "type": "Education",
+        "date": "2021",
+        "title": "Graduated Abertay University",
+        "subtitle": "Computing - Bachelor of Science",
+        "description": "description"
+    },
+    {
+        "type": "Work",
+        "date": "2019 - 2020",
+        "title": "Bartender & Waiter",
+        "subtitle": "Apex Hotels",
+        "description": "description"
+    },
+    {
+        "type": "Work",
+        "date": "2018 - 2019",
+        "title": "Chef",
+        "subtitle": "Pacamara Food & Drink",
+        "description": "description"
+    },
+    {
+        "type": "Education",
+        "date": "2018",
+        "title": "Graduated Gateshead College",
+        "subtitle": "Software Development - BTEC Extended Diploma",
+        "description": "description"
+    },
+    {
+        "type": "Work",
+        "date": "2016 - 2018",
+        "title": "Chef & Waiter",
+        "subtitle": "Cairn Hotel Group",
+        "description": "description"
+    },
+    {
+        "type": "Education",
+        "date": "2016",
+        "title": "Graduated Lord Lawson Academy",
+        "subtitle": "GCSEs",
+        "description": "description"
+    },
+    {
+        "type": "Work",
+        "date": "2014 - 2018",
+        "title": "Head Basketball Coach",
+        "subtitle": "Gateshead/ Birtley Phoenix",
+        "description": "description"
+    }
+]

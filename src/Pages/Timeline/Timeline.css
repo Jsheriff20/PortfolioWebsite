@@ -17,7 +17,6 @@
     max-width: 1170px;
     margin: 0 auto;
     position: relative;
-    padding: 2em 0;
 }
 
 .vertical-timeline::after {
@@ -26,14 +25,28 @@
     clear: both;
 }
 
-.vertical-timeline::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 18px;
-    height: 100%;
-    width: 4px;
-    background: var(--line-color);
+@media only screen and (min-width: 768px) {
+    .vertical-timeline::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 18px;
+        height: 95%;
+        width: 4px;
+        background: var(--line-color);
+    }
+}
+
+@media not screen and (min-width: 1170px) {
+    .vertical-timeline::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 18px;
+        height: 90%;
+        width: 4px;
+        background: var(--line-color);
+    }
 }
 
 .vertical-timeline.vertical-timeline--one-column-right::before {
@@ -67,11 +80,11 @@
 }
 
 .vertical-timeline-element:first-child {
-    margin-top: 70px;
+    margin-top: 0;
 }
 
 .vertical-timeline-element:last-child {
-    margin-bottom: 70px;
+    margin-bottom: 0;
 }
 
 @media only screen and (min-width: 1170px) {
@@ -79,10 +92,10 @@
         margin: 4em 0;
     }
     .vertical-timeline-element:first-child {
-        margin-top: 100px;
+        margin-top: 0;
     }
     .vertical-timeline-element:last-child {
-        margin-bottom: 100px;
+        margin-bottom: 0;
     }
 }
 

@@ -39,6 +39,7 @@ const SocialMediaButton = ({ id, socialMediaType, sx, ...otherProps }) => {
                 backgroundColor: theme.palette.primary.contrastText,
                 minWidth: "10px",
                 padding: "7px 9px",
+                transition: "0.3s",
 
                 ":hover ": {
                     background: getSocialMediaIconColour(socialMediaType),

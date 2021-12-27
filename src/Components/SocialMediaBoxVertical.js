@@ -1,23 +1,7 @@
 import React from "react";
-import clsx from "clsx";
-import { makeStyles } from "@mui/styles";
-// @material-ui/icons components
-// core components
-import {
-    Button,
-    Container,
-    Grid,
-    Paper,
-    Typography,
-    Table,
-    TableBody,
-    TableCell,
-    TableContainer,
-    TableRow,
-    Box,
-} from "@mui/material";
+import { Typography, Table, TableBody, TableCell, TableContainer, TableRow } from "@mui/material";
 import theme from "./Themes";
-
+import openInNewTab from "../Utils/openInNewTab";
 import SocialMediaButton from "./Buttons/SocialMediaButton";
 
 //sx styles
@@ -98,10 +82,3 @@ const MediaButtonsVertical = ({ sx, ...otherProps }) => {
 };
 
 export default MediaButtonsVertical;
-
-const openInNewTab = (url) => {
-    const win = window.open(url, "_blank");
-    if (win != null) {
-        win.focus();
-    }
-};

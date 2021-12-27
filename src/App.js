@@ -6,7 +6,6 @@ import { Box, CssBaseline } from "@mui/material";
 import Timeline from "./Pages/Timeline/Timeline";
 import Intro from "./Pages/Intro/Intro";
 import Portfolio from "./Pages/Portfolio/Portfolio";
-import Testimonials from "./Pages/Testimonials/Testimonials";
 import Contact from "./Pages/Contact/Contact";
 import Theme from "./Components/Themes";
 
@@ -38,7 +37,6 @@ function App() {
                         <Intro />
                         <Timeline />
                         <Portfolio />
-                        <Testimonials />
                         <Contact />
                     </Box>
                 </Box>

@@ -1,13 +1,15 @@
-import { Container, Typography, Grid, Paper, ImageList, Text, Button, Box, Card } from "@mui/material";
+import { Typography, Grid, Button, Box, Card } from "@mui/material";
 import React from "react";
 import SocialMediaBoxHorizontal from "../../Components/SocialMediaBoxHorizontal";
 import SocialMediaBoxVertical from "../../Components/SocialMediaBoxVertical";
 import theme from "../../Components/Themes";
+import LightButton from "../../Components/Buttons/LightButton";
 
 const introStyle = {
     width: "100vw",
     maxWidth: "1200px",
     margin: "auto",
+    marginBottom: "100px",
     backgroundColor: "transparent",
 };
 
@@ -50,14 +52,6 @@ const subTitleStyle = {
     color: theme.palette.primary.contrastText,
 };
 
-const contactButtonStyle = {
-    backgroundColor: theme.palette.secondary.light,
-    color: theme.palette.secondary.contrastText,
-    marginTop: "1rem",
-    margin: "auto",
-    fontSize: "1.2rem",
-};
-
 const aboutMeTitleStyle = {
     fontSize: "3.125rem",
     color: theme.palette.greys.contrastText,
@@ -84,9 +78,9 @@ export default function Intro(props) {
                     <Typography sx={Object.assign(subTitleStyle, jobStyle)}>Software Developer</Typography>
 
                     <Box sx={centerButtonStyle}>
-                        <Button variant="contained" size="large" sx={contactButtonStyle}>
+                        <LightButton isSubmitting={false} size="large">
                             <strong>Contact Me</strong>
-                        </Button>
+                        </LightButton>
                     </Box>
                 </Grid>
                 <Grid item sx={12} md={5} sx={profileInfoStyle}>

@@ -9,11 +9,14 @@ const MediaButtonsHorizontal = ({ sx, ...otherProps }) => {
     return (
         <Box
             {...otherProps}
-            sx={Object.assign(sx, {
-                justifyContent: "center",
-                alignItems: "center",
-                display: { xs: "flex", md: "none" },
-            })}
+            sx={[
+                sx,
+                {
+                    justifyContent: "center",
+                    alignItems: "center",
+                    display: { xs: "flex", md: "none" },
+                },
+            ]}
         >
             {/*display for smaller screens*/}
             <SocialMediaButton

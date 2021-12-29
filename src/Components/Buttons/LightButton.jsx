@@ -25,6 +25,7 @@ const LightButton = ({ sx, isSubmitting, ...otherProps }) => {
                   animation: "rotating 2s 0.4s linear infinite",
                   backgroundColor: "transparent",
                   color: "transparent",
+                  padding: "0px",
                   boxShadow:
                       "0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%)",
 
@@ -48,14 +49,14 @@ const LightButton = ({ sx, isSubmitting, ...otherProps }) => {
                       },
                   },
               }
-            : { lightButtonStyle },
+            : lightButtonStyle,
         {
             cursor: "pointer",
             transition: "all 0.25s ease",
         }
     );
 
-    return <Button variant="contained" sx={Object.assign(sx ? sx : {}, style)} {...otherProps} />;
+    return <Button variant="contained" sx={[sx ? sx : {}, style]} {...otherProps} />;
 };
 
 export default LightButton;

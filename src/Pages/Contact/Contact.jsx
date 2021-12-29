@@ -1,28 +1,21 @@
-import { Card, Grid, TextField } from "@mui/material";
+import { Box, Card, Grid, TextField, Typography } from "@mui/material";
 import React from "react";
 import { Formik } from "formik";
 import * as Yup from "yup";
 import LightButton from "../../Components/Buttons/LightButton";
-
-const contactStyle = {
-    height: "100vh",
-    width: "100vw",
-    maxWidth: "1200px",
-    margin: "auto",
-};
-
-const contactFormStyle = {
-    margin: "auto",
-    width: "100%",
-    backgroundColor: "white",
-};
+import theme from "../../Components/Themes";
+import * as Style from "./Style";
 
 export default function Contact() {
     return (
-        <Grid container maxWidth="md" sx={contactStyle}>
-            <Grid item xs={12} md={3}></Grid>
-            <Grid item xs={12} md={6}>
-                <Card sx={contactFormStyle}>
+        <Grid sx={Style.contactStyle}>
+            <Grid item sm={0} md={2} />
+            <Grid item sm={12} md={8}>
+                <Card sx={Style.contactFormStyle} raised>
+                    <Box sx={Style.header}>
+                        <Typography sx={Style.subTitleStyle}>Send me a message</Typography>
+                    </Box>
+
                     <Formik
                         initialValues={{ name: "", email: "", content: "" }}
                         validationSchema={Yup.object().shape({
@@ -37,53 +30,56 @@ export default function Contact() {
                             setSubmitting(false);
                         }}
                     >
-                        {({ values, errors, touched, handleChange, handleBlur, handleSubmit, isSubmitting }) => (
+                        {({ values, handleChange, handleBlur, handleSubmit, isSubmitting }) => (
                             <form onSubmit={handleSubmit}>
-                                <Grid
-                                    container
-                                    direction="column"
-                                    alignContent="center"
-                                    justify="center"
-                                    align="center"
-                                >
-                                    <Grid item xs={12}>
+                                <Grid container sx={Style.formGrid}>
+                                    <Grid item xs={12} sx={Style.gridElement}>
+                                        <Typography>Name</Typography>
                                         <TextField
                                             name="name"
+                                            id="name"
                                             onChange={handleChange}
                                             onBlur={handleBlur}
                                             value={values.name}
                                         />
                                     </Grid>
 
-                                    <Grid item xs={12}>
+                                    <Grid item xs={12} sx={Style.gridElement}>
+                                        <Typography>Email</Typography>
+
                                         <TextField
+                                            align="center"
                                             type="email"
                                             name="email"
+                                            id="email"
                                             onChange={handleChange}
                                             onBlur={handleBlur}
                                             value={values.email}
                                         />
                                     </Grid>
 
-                                    <Grid item xs={12}>
+                                    <Grid item xs={12} sx={Style.gridElement}>
+                                        <Typography>Message</Typography>
+
                                         <TextField
                                             name="content"
+                                            id="content"
                                             onChange={handleChange}
                                             onBlur={handleBlur}
                                             value={values.content}
                                             multiline
                                             maxRows={100}
                                             rows={4}
-                                            inputProps={{ maxLength: 1000 }}
+                                            inputProps={{ maxLength: 5, color: theme.palette.primary.contrastText }}
                                         />
                                     </Grid>
 
-                                    <Grid item xs={12}>
+                                    <Grid item xs={12} sx={Style.submitGrid}>
                                         <LightButton
                                             type="submit"
-                                            isSubmitting={true}
-                                            disabled={true}
-                                            sx={{ width: "100px" }}
+                                            size="large"
+                                            isSubmitting={isSubmitting}
+                                            disabled={isSubmitting}
                                         >
                                             Submit
                                         </LightButton>
@@ -94,7 +90,7 @@ export default function Contact() {
                     </Formik>
                 </Card>
             </Grid>
-            <Grid item xs={12} md={3}></Grid>
+            <Grid item sm={0} md={2} />
         </Grid>
     );
 }

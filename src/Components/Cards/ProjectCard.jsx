@@ -1,7 +1,7 @@
 import { Card, CardMedia, CardContent, Typography, CardActions, IconButton } from "@mui/material";
 import React from "react";
 import { Info, GitHub } from "@mui/icons-material";
-import theme from "../../Components/Themes";
+import theme from "../Themes";
 import TagButton from "../Buttons/TagButton";
 import openInNewTab from "../../Utils/openInNewTab";
 

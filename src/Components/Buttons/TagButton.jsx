@@ -24,19 +24,22 @@ const TagButton = ({ sx, ...props }) => {
         <Button
             {...props}
             variant="contained"
-            sx={Object.assign(sx ? sx : {}, {
-                backgroundColor: tagColour,
-                color: findContrastColour(tagColour),
-                lineHeight: "1.2",
-                borderRadius: "10px",
-                transition: "0.5s",
+            sx={[
+                sx ? sx : {},
+                {
+                    backgroundColor: tagColour,
+                    color: findContrastColour(tagColour),
+                    lineHeight: "1.2",
+                    borderRadius: "10px",
+                    transition: "0.5s",
 
-                ":hover ": {
-                    transform: "translateY(-5px)",
-                    background: theme.palette.secondary.main,
-                    color: findContrastColour(theme.palette.secondary.main),
+                    ":hover ": {
+                        transform: "translateY(-5px)",
+                        background: theme.palette.secondary.main,
+                        color: findContrastColour(theme.palette.secondary.main),
+                    },
                 },
-            })}
+            ]}
         />
     );
 };

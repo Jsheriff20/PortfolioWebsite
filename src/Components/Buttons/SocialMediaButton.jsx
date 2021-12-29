@@ -35,19 +35,22 @@ const SocialMediaButton = ({ id, socialMediaType, sx, ...otherProps }) => {
             {...otherProps}
             id={id}
             variant="contained"
-            sx={Object.assign(sx ? sx : {}, {
-                backgroundColor: theme.palette.primary.contrastText,
-                minWidth: "10px",
-                padding: "7px 9px",
-                transition: "0.3s",
+            sx={[
+                sx ? sx : {},
+                {
+                    backgroundColor: theme.palette.primary.contrastText,
+                    minWidth: "10px",
+                    padding: "7px 9px",
+                    transition: "0.3s",
 
-                ":hover ": {
-                    background: getSocialMediaIconColour(socialMediaType),
-                    "> *": {
-                        color: "#fff",
+                    ":hover ": {
+                        background: getSocialMediaIconColour(socialMediaType),
+                        "> *": {
+                            color: "#fff",
+                        },
                     },
                 },
-            })}
+            ]}
         >
             {getSocialMediaIcon(socialMediaType, { color: getSocialMediaIconColour(socialMediaType) })}
         </Button>

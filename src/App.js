@@ -22,7 +22,7 @@ const containerStyle = {
 const sectionsStyle = {
     maxWidth: "1200px",
     margin: "auto",
-    marginTop: { xs: "0px", md: "90px" },
+    marginTop: "-5px",
     marginBottom: "90px",
     backgroundColor: "transparent",
 };

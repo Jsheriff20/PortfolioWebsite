@@ -1,40 +1,38 @@
-import { Grid, Card, CardMedia, CardContent, Typography, CardActions, Button, IconButton } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import React, { useState } from "react";
-import { Info, GitHub } from "@mui/icons-material";
-import theme from "../../Components/Themes";
 import PortfolioData from "./PortfolioData";
 import ProjectCard from "../../Components/Cards/ProjectCard";
 import LightButton from "../../Components/Buttons/LightButton";
+import * as Style from "./Style";
 
 export default function Portfolio(props) {
     const [numOfCards, setNumOfCards] = useState(3);
 
     return (
-        //TODO set max of 4 projects to load at first
         <>
+            <Typography sx={Style.subTitle}>My Projects</Typography>
+
             <Grid container direction="row">
                 {PortfolioData.map(
                     (item, i) =>
                         i <= numOfCards && (
-                            <Grid item xs={12} md={6} sx={{ padding: "30px" }}>
+                            <Grid item xs={12} md={6} sx={Style.cardGrid}>
                                 <ProjectCard data={item} />
                             </Grid>
                         )
                 )}
 
-                <Grid item xs={12} align="center">
+                <Grid item xs={12} sx={Style.buttonGrid}>
                     <LightButton
                         isSubmitting={false}
-                        size="small"
+                        size="large"
                         onClick={() => setNumOfCards(numOfCards + 4)}
-                        sx={{ marginBottom: "100px" }}
+                        sx={Style.button}
                     >
                         <strong>View More</strong>
                     </LightButton>
                 </Grid>
             </Grid>
         </>
-
-        //TODO add a button "View More", if clicked show 4 more projects
     );
 }

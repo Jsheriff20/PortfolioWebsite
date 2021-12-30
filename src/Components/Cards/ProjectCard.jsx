@@ -22,13 +22,18 @@ const iconStyles = {
     },
 };
 
-export default function ProjectCard(props) {
+//TODO depending on screen size display ... after x number of characters for the description
+export default function ProjectCard({ sx, ...props }) {
     return (
         <Card
-            sx={{
-                backgroundColor: theme.palette.primary.main,
-                color: theme.palette.primary.contrastText,
-            }}
+            {...props}
+            sx={[
+                sx,
+                {
+                    backgroundColor: theme.palette.primary.main,
+                    color: theme.palette.primary.contrastText,
+                },
+            ]}
             raised
         >
             <CardActions>

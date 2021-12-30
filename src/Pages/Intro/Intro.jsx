@@ -20,7 +20,13 @@ export default function Intro(props) {
                     </Typography>
                     <Typography sx={[Style.job, Style.subTitle]}>Software Developer</Typography>
                     <Box sx={Style.centerButton}>
-                        <LightButton isSubmitting={false} size="large">
+                        <LightButton
+                            isSubmitting={false}
+                            size="large"
+                            onClick={() =>
+                                (window.location.href = `${window.location.protocol}//${window.location.host}/#ContactMe`)
+                            }
+                        >
                             <strong>Contact Me</strong>
                         </LightButton>
                     </Box>
@@ -35,11 +41,11 @@ export default function Intro(props) {
                                 <Typography sx={Style.subTitle}>About Me...</Typography>
                                 <Typography sx={Style.aboutMe}>
                                     <p>
-                                        Hi, I am a Software Developer that graduated{" "}
+                                        Hi, I am a Software Developer that graduated from{" "}
                                         <strong onClick={() => openInNewTab("https://www.abertay.ac.uk/")}>
                                             Abertay University
                                         </strong>{" "}
-                                        with a First Class Honours Degree in Computing. I am currently a Junior Software
+                                        with a First Class Honours Degree in Computing.I am currently a Junior Software
                                         Developer at{" "}
                                         <strong onClick={() => openInNewTab("https://www.connecthealth.co.uk/")}>
                                             Connect Health
@@ -52,7 +58,7 @@ export default function Intro(props) {
                                                 )
                                             }
                                         >
-                                            Dynamo Rising Star Shortlistee
+                                            Dynamo Rising Star Shortlistee.
                                         </strong>
                                     </p>
                                 </Typography>

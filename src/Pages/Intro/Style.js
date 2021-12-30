@@ -28,7 +28,7 @@ export const infoBar = {
 export const title = {
     textAlign: "center",
     lineHeight: null,
-    fontSize: "5.625rem",
+    fontSize: { xs: "4.5rem", md: "5.2rem", lg: "5.625rem" },
     color: theme.palette.orange.main,
     textShadow: "0px 6px 6px rgb(0 0 0 / 44%), 0px 10px 14px rgb(0 0 0 / 30%), 0px 4px 18px rgb(0 0 0 / 26%)",
     flexShrink: 1,
@@ -45,7 +45,7 @@ export const aboutMe = {
 };
 
 export const subTitle = {
-    fontSize: "3.125rem",
+    fontSize: { xs: "1.9rem", sm: "2.5rem", md: "3.125rem" },
     color: theme.palette.primary.contrastText,
 };
 

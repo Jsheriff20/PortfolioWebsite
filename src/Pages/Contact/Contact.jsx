@@ -8,7 +8,7 @@ import * as Style from "./Style";
 
 export default function Contact() {
     return (
-        <Grid sx={Style.contactStyle}>
+        <Grid sx={Style.contactStyle} id="ContactMe">
             <Grid item sm={0} md={2} />
             <Grid item sm={12} md={8}>
                 <Card sx={Style.contactFormStyle} raised>
@@ -41,6 +41,11 @@ export default function Contact() {
                                             onChange={handleChange}
                                             onBlur={handleBlur}
                                             value={values.name}
+                                            sx={{
+                                                border: `1px solid ${"#222224"}`,
+                                                borderRadius: "4px",
+                                                backgroundColor: theme.palette.primary.light,
+                                            }}
                                         />
                                     </Grid>
 
@@ -48,13 +53,18 @@ export default function Contact() {
                                         <Typography>Email</Typography>
 
                                         <TextField
-                                            align="center"
-                                            type="email"
                                             name="email"
                                             id="email"
+                                            align="center"
+                                            type="email"
                                             onChange={handleChange}
                                             onBlur={handleBlur}
                                             value={values.email}
+                                            sx={{
+                                                border: `1px solid ${"#222224"}`,
+                                                borderRadius: "4px",
+                                                backgroundColor: theme.palette.primary.light,
+                                            }}
                                         />
                                     </Grid>
 
@@ -62,15 +72,16 @@ export default function Contact() {
                                         <Typography>Message</Typography>
 
                                         <TextField
-                                            name="content"
-                                            id="content"
+                                            name="message"
+                                            id="message"
                                             onChange={handleChange}
                                             onBlur={handleBlur}
                                             value={values.content}
                                             multiline
                                             maxRows={100}
                                             rows={4}
-                                            inputProps={{ maxLength: 5, color: theme.palette.primary.contrastText }}
+                                            inputProps={{ maxLength: 1000, color: theme.palette.primary.contrastText }}
+                                            sx={Style.messageField}
                                         />
                                     </Grid>
 

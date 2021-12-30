@@ -5,10 +5,6 @@ export const subTitle = {
     color: theme.palette.primary.contrastText,
     marginBottom: "30px",
     display: "flex",
-    alignContent: "center",
-    justify: "center",
-    align: "center",
-    flexDirection: "column",
     justifyContent: "center",
 };
 
@@ -18,7 +14,8 @@ export const cardGrid = {
 
 export const buttonGrid = {
     marginTop: "20px",
-    align: "center",
+    display: "flex",
+    justifyContent: "center",
 };
 
 export const button = {

@@ -8,6 +8,27 @@ import * as Style from "./Style";
 export default function Portfolio(props) {
     const [numOfCards, setNumOfCards] = useState(3);
 
+    const mountedStyle = (cardNum) => {
+        cardNum = cardNum % 4;
+        cardNum = cardNum === 0 ? 1 : cardNum + 1;
+
+        let ms = cardNum * 300 + "ms";
+
+        return {
+            animation: `inAnimation ${ms} ease-in`,
+            " @keyframes inAnimation": {
+                "0%": {
+                    opacity: 0,
+                    visibility: "hidden",
+                },
+                "100%": {
+                    opacity: 1,
+                    visibility: "visible",
+                },
+            },
+        };
+    };
+
     return (
         <>
             <Typography sx={Style.subTitle}>My Projects</Typography>
@@ -17,7 +38,7 @@ export default function Portfolio(props) {
                     (item, i) =>
                         i <= numOfCards && (
                             <Grid item xs={12} md={6} sx={Style.cardGrid}>
-                                <ProjectCard data={item} />
+                                <ProjectCard data={item} sx={mountedStyle(i)} />
                             </Grid>
                         )
                 )}

@@ -1,10 +1,10 @@
 import theme from "../../Components/Themes";
 
 export const contactStyle = {
-    height: "100vh",
     width: "100vw",
     maxWidth: "1200px",
     margin: "auto",
+    marginBottom: "50px",
     display: { xs: null, md: "flex" },
 };
 
@@ -16,7 +16,7 @@ export const contactFormStyle = {
 };
 
 export const subTitleStyle = {
-    fontSize: "3.125rem",
+    fontSize: { xs: "1.9rem", sm: "2.5rem", md: "3.125rem" },
     color: theme.palette.primary.contrastText,
     alignContent: "center",
     justify: "center",
@@ -39,25 +39,42 @@ export const formGrid = {
     flexDirection: "column",
 };
 
+const fieldStyle = {
+    border: `1px solid ${theme.palette.primary.dark}`,
+    borderRadius: "4px",
+    backgroundColor: theme.palette.primary.light,
+};
+
 export const gridElement = {
     marginTop: "20px",
+
     "*": {
         fontSize: "18px",
         input: { color: theme.palette.primary.contrastText },
         textarea: { color: "#fff !important" },
     },
 
+    ".MuiTypography-root": {
+        paddingLeft: "10px",
+    },
+
     "#name": {
-        width: "200px",
+        width: { xs: "220px", sm: "200px" },
+        ...fieldStyle,
     },
 
     "#email": {
-        width: "300px",
+        width: { xs: "220px", sm: "300px" },
+        ...fieldStyle,
     },
 
-    "#content": {
-        width: "400px",
+    "#message": {
+        width: { xs: "220px", sm: "300px", md: "400px" },
     },
+};
+
+export const messageField = {
+    ...fieldStyle,
 };
 
 export const submitGrid = {

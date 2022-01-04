@@ -41,16 +41,12 @@ export default function Intro(props) {
                                 <Typography sx={Style.subTitle}>About Me...</Typography>
                                 <Typography sx={Style.aboutMe}>
                                     <p>
-                                        Hi, I am a Software Developer that graduated from{" "}
-                                        <strong onClick={() => openInNewTab("https://www.abertay.ac.uk/")}>
-                                            Abertay University
-                                        </strong>{" "}
-                                        with a First Class Honours Degree in Computing.I am currently a Junior Software
-                                        Developer at{" "}
+                                        Hi I am <strong>Jack Sheriff</strong>, a Software Developer based in the North
+                                        East of England currently working for{" "}
                                         <strong onClick={() => openInNewTab("https://www.connecthealth.co.uk/")}>
                                             Connect Health
                                         </strong>
-                                        , and a{" "}
+                                        . After 4 short months at Connect Health I was shortlisted for the{" "}
                                         <strong
                                             onClick={() =>
                                                 openInNewTab(
@@ -58,8 +54,19 @@ export default function Intro(props) {
                                                 )
                                             }
                                         >
-                                            Dynamo Rising Star Shortlistee.
+                                            Dynamo Rising Star Award
                                         </strong>
+                                        , due to my ability to utalise technology to provide increased accessability to
+                                        patients as well as my worked done in the final project of my Honours Degree in
+                                        Computing, where I acheived a First Class (4.3/ 4.5 GPA). During my studies and
+                                        personal projects, I have worked with a range of languages and tools, that allow
+                                        me to achieve the best solution to each unique problem. I am a dedicated hard
+                                        worker that always strives for the best and works well under pressure whilst
+                                        achieving deadlines. I am a strong team player and participate in multiple team
+                                        activities, however, I work just as strongly as an individual which has been
+                                        demonstrated through my multiple personal programming projects and work efforts.
+                                        I have interests in stock market, property, and crypto trading as well as team
+                                        activities such as basketball.
                                     </p>
                                 </Typography>
                             </Grid>

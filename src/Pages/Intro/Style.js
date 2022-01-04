@@ -1,6 +1,6 @@
 import theme from "../../Components/Themes";
 
-import profileImage from "../../Media/ProfileImage2.jpg";
+import profileImage from "../../Media/Images/ProfileImage2.jpg";
 
 export const intro = {
     width: "100vw",

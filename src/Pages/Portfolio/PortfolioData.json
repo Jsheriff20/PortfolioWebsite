@@ -1,6 +1,6 @@
 [
     {
-        "tags": ["Android", "Java", "Firebase", "University"],
+        "tags": ["Android", "Java", "Firebase", "University", "Dissertation"],
         "image": "test",
         "githubLink": "",
         "infoLink": "",
@@ -8,83 +8,83 @@
         "description": "Description"
     },
     {
-        "tags": ["Android", "Java", "Firebase", "University"],
+        "tags": ["C#", "University"],
         "image": "test",
         "githubLink": "",
         "infoLink": "",
-        "title": "Application To Prevent Cognitive Decline In The Elderly",
+        "title": "PAL Language Compiler",
         "description": "Description"
     },
     {
-        "tags": ["Android", "Java", "Firebase", "University"],
+        "tags": ["React", "JavaScript", "NextJS", "CSS"],
         "image": "test",
         "githubLink": "",
         "infoLink": "",
-        "title": "Application To Prevent Cognitive Decline In The Elderly",
+        "title": "Portfolio Website",
         "description": "Description"
     },
     {
-        "tags": ["Android", "Java", "Firebase", "University"],
+        "tags": ["C++", "University"],
         "image": "test",
         "githubLink": "",
         "infoLink": "",
-        "title": "Application To Prevent Cognitive Decline In The Elderly",
+        "title": "Multi Threaded String Search Algorithms",
         "description": "Description"
     },
     {
-        "tags": ["Android", "Java", "Firebase", "University"],
+        "tags": ["C#", "University"],
         "image": "test",
         "githubLink": "",
         "infoLink": "",
-        "title": "Application To Prevent Cognitive Decline In The Elderly",
+        "title": "Instant Messaging App",
         "description": "Description"
     },
     {
-        "tags": ["Android", "Java", "Firebase", "University"],
+        "tags": ["Android", "Java", "University"],
         "image": "test",
         "githubLink": "",
         "infoLink": "",
-        "title": "Application To Prevent Cognitive Decline In The Elderly",
+        "title": "Android Quiz Alarm",
         "description": "Description"
     },
     {
-        "tags": ["Android", "Java", "Firebase", "University"],
+        "tags": ["Python", "Tensorflow", "Artifical Intelligence", "University"],
         "image": "test",
         "githubLink": "",
         "infoLink": "",
-        "title": "Application To Prevent Cognitive Decline In The Elderly",
+        "title": "Expression Recognition Using Artificial Intelligence",
         "description": "Description"
     },
     {
-        "tags": ["Android", "Java", "Firebase", "University"],
+        "tags": ["Artifical Intelligence", "C#", "Firebase", "University"],
         "image": "test",
         "githubLink": "",
         "infoLink": "",
-        "title": "Application To Prevent Cognitive Decline In The Elderly",
+        "title": "Postcode Scorer Using Fuzzy Logic",
         "description": "Description"
     },
     {
-        "tags": ["Android", "Java", "Firebase", "University"],
+        "tags": ["Raspberry Pi", "Python", "AWS", "C", "HTML", "CSS", "PHP", "Linux", "University"],
         "image": "test",
         "githubLink": "",
         "infoLink": "",
-        "title": "Application To Prevent Cognitive Decline In The Elderly",
+        "title": "Raspberry Pi Based Automatic Plant Watering System",
         "description": "Description"
     },
     {
-        "tags": ["Android", "Java", "Firebase", "University"],
+        "tags": ["AWS", "Security", "University"],
         "image": "test",
         "githubLink": "",
         "infoLink": "",
-        "title": "Application To Prevent Cognitive Decline In The Elderly",
+        "title": "Security Solutions",
         "description": "Description"
     },
     {
-        "tags": ["Android", "Java", "Firebase", "University"],
+        "tags": ["Hadoop", "Spark", "University"],
         "image": "test",
         "githubLink": "",
         "infoLink": "",
-        "title": "Application To Prevent Cognitive Decline In The Elderly",
+        "title": "Setup Of Hadoop Cluster",
         "description": "Description"
     }
 ]

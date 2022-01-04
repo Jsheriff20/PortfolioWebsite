@@ -10,7 +10,7 @@ export default function TimelineElement({ details }) {
             }
             date={details.date}
             iconStyle={{
-                background: details.type === "Work" ? "rgb(33, 150, 243)" : theme.palette.iconButtons.linkedIn.icon,
+                background: details.type === "Work" ? theme.palette.secondary.main : theme.palette.secondary.light,
                 color: "#fff",
             }}
             icon={details.type === "Work" ? <Work /> : <School />}

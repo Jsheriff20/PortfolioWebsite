@@ -1,4 +1,4 @@
-import { Card, CardMedia, CardContent, Typography, CardActions, IconButton } from "@mui/material";
+import { Card, CardMedia, CardContent, Typography, CardActions, IconButton, Box } from "@mui/material";
 import React from "react";
 import { Info, GitHub } from "@mui/icons-material";
 import theme from "../Themes";
@@ -37,9 +37,13 @@ export default function ProjectCard({ sx, ...props }) {
             raised
         >
             <CardActions>
-                {props.data.tags.map((tag) => (
-                    <TagButton size="small">{tag}</TagButton>
-                ))}
+                <Box>
+                    {props.data.tags.map((tag, i) => (
+                        <TagButton size="small" key={i} type={tag}>
+                            {tag}
+                        </TagButton>
+                    ))}
+                </Box>
             </CardActions>
 
             <CardMedia component="img" height="190" image={`../../Media/${props.data.image}`} alt={props.data.image} />

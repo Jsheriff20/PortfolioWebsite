@@ -44,14 +44,11 @@ export default function Portfolio(props) {
                 )}
 
                 <Grid item xs={12} sx={Style.buttonGrid}>
-                    <LightButton
-                        isSubmitting={false}
-                        size="large"
-                        onClick={() => setNumOfCards(numOfCards + 4)}
-                        sx={Style.button}
-                    >
-                        <strong>View More</strong>
-                    </LightButton>
+                    {PortfolioData.length > numOfCards && (
+                        <LightButton isSubmitting={false} size="large" onClick={() => setNumOfCards(numOfCards + 4)}>
+                            <strong>View More</strong>
+                        </LightButton>
+                    )}
                 </Grid>
             </Grid>
         </>

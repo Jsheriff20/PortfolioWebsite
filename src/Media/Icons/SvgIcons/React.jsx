@@ -1,7 +1,8 @@
-import { SvgIcon } from "@mui/material";
+import { SvgIcon } from "@mui/material"
 
 function ReactIcon(props) {
-    let colours = props.colours || ["#80deea"];
+    console.log(props.colours)
+    let colours = props.colours || ["black"]
     return (
         <SvgIcon {...props} viewBox="0 0 48 48">
             <path
@@ -18,7 +19,7 @@ function ReactIcon(props) {
             />
             <circle cx="24" cy="24" r="4" fill={colours[0]} />
         </SvgIcon>
-    );
+    )
 }
 
-export default ReactIcon;
+export default ReactIcon

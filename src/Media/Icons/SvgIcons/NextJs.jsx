@@ -1,7 +1,7 @@
-import { SvgIcon } from "@mui/material";
+import { SvgIcon } from "@mui/material"
 
 function NextJs(props) {
-    let colours = props.colours || ["#fff", "#000"];
+    let colours = props.colours || ["#000", "#fff"]
     return (
         <SvgIcon {...props} viewBox=".5 -.2 1023 1024.1">
             <path
@@ -13,7 +13,7 @@ function NextJs(props) {
                 fill={colours[1]}
             />
         </SvgIcon>
-    );
+    )
 }
 
-export default NextJs;
+export default NextJs

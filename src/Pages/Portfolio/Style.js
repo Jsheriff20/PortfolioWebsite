@@ -16,8 +16,5 @@ export const buttonGrid = {
     marginTop: "20px",
     display: "flex",
     justifyContent: "center",
-};
-
-export const button = {
     marginBottom: "200px",
 };

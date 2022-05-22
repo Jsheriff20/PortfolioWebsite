@@ -1,4 +1,4 @@
-import theme from "../../Components/Themes";
+import theme from "../../Components/Themes"
 
 export const contactStyle = {
     width: "100vw",
@@ -6,14 +6,14 @@ export const contactStyle = {
     margin: "auto",
     marginBottom: "50px",
     display: { xs: null, md: "flex" },
-};
+}
 
 export const contactFormStyle = {
     margin: "auto",
     width: "100%",
-    backgroundColor: theme.palette.primary.main,
+    backgroundColor: theme.palette.primary.dark,
     color: theme.palette.primary.contrastText,
-};
+}
 
 export const subTitleStyle = {
     fontSize: { xs: "1.9rem", sm: "2.5rem", md: "3.125rem" },
@@ -23,27 +23,27 @@ export const subTitleStyle = {
     align: "center",
     display: "flex",
     justifyContent: "center",
-};
+}
 
 export const header = {
-    backgroundColor: theme.palette.secondary.light,
+    backgroundColor: theme.palette.secondary.main,
     height: "90px",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
-};
+}
 
 export const formGrid = {
     justify: "center",
     alignContent: "center",
     flexDirection: "column",
-};
+}
 
 const fieldStyle = {
     border: `1px solid ${theme.palette.primary.dark}`,
     borderRadius: "4px",
-    backgroundColor: theme.palette.primary.light,
-};
+    backgroundColor: theme.palette.primary.main,
+}
 
 export const gridElement = {
     marginTop: "20px",
@@ -71,15 +71,15 @@ export const gridElement = {
     "#message": {
         width: { xs: "220px", sm: "300px", md: "400px" },
     },
-};
+}
 
 export const messageField = {
     ...fieldStyle,
-};
+}
 
 export const submitGrid = {
     marginTop: "30px",
     marginBottom: "15px",
     display: "flex",
     justifyContent: "center",
-};
+}

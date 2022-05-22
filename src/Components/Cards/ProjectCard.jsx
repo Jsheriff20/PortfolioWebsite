@@ -1,9 +1,9 @@
-import { Card, CardMedia, CardContent, Typography, CardActions, IconButton, Box } from "@mui/material";
-import React from "react";
-import { Info, GitHub } from "@mui/icons-material";
-import theme from "../Themes";
-import TagButton from "../Buttons/TagButton";
-import openInNewTab from "../../Utils/openInNewTab";
+import { Card, CardMedia, CardContent, Typography, CardActions, IconButton, Box } from "@mui/material"
+import React from "react"
+import { Info, GitHub } from "@mui/icons-material"
+import theme from "../Themes"
+import TagButton from "../Buttons/TagButton"
+import openInNewTab from "../../Utils/openInNewTab"
 
 const iconStyles = {
     color: "#fff",
@@ -20,7 +20,7 @@ const iconStyles = {
         color: theme.palette.primary.main,
         background: "#fff",
     },
-};
+}
 
 //TODO depending on screen size display ... after x number of characters for the description
 export default function ProjectCard({ sx, ...props }) {
@@ -32,11 +32,12 @@ export default function ProjectCard({ sx, ...props }) {
                 {
                     backgroundColor: theme.palette.primary.main,
                     color: theme.palette.primary.contrastText,
+                    minHeight: "500px",
                 },
             ]}
             raised
         >
-            <CardActions>
+            <CardActions sx={{ backgroundColor: theme.palette.secondary.main }}>
                 <Box>
                     {props.data.tags.map((tag, i) => (
                         <TagButton size="small" key={i} type={tag}>
@@ -46,7 +47,12 @@ export default function ProjectCard({ sx, ...props }) {
                 </Box>
             </CardActions>
 
-            <CardMedia component="img" height="190" image={`../../Media/${props.data.image}`} alt={props.data.image} />
+            <CardMedia
+                component="img"
+                height="190"
+                image={props.data.image && props.data.image}
+                alt={props.data.imageAlt}
+            />
             <CardActions
                 sx={{
                     display: "flex",
@@ -57,9 +63,22 @@ export default function ProjectCard({ sx, ...props }) {
                     },
                 }}
             >
-                <IconButton size="small" onClick={() => openInNewTab(props.data.githubLink)}>
-                    <GitHub sx={iconStyles} />
-                </IconButton>
+                {!props.data.githubLink ? (
+                    <Typography
+                        sx={{
+                            backgroundColor: "#db3939",
+                            borderRadius: "4px",
+                            padding: "2px 4px 2px 4px",
+                            fontSize: "14px",
+                        }}
+                    >
+                        Private Repo
+                    </Typography>
+                ) : (
+                    <IconButton size="small" onClick={() => openInNewTab(props.data.githubLink)}>
+                        <GitHub sx={iconStyles} />
+                    </IconButton>
+                )}
                 <IconButton size="small" onClick={() => openInNewTab(props.data.infoLink)}>
                     <Info sx={iconStyles} />
                 </IconButton>
@@ -69,10 +88,13 @@ export default function ProjectCard({ sx, ...props }) {
                 <Typography gutterBottom variant="h5" component="div">
                     {props.data.title}
                 </Typography>
-                <Typography variant="body2" sx={{ color: theme.palette.greys.lighter }}>
+                <Typography
+                    variant="body2"
+                    sx={{ color: theme.palette.greys.lighter, fontFamily: "Georgia", fontSize: "16px" }}
+                >
                     {props.data.description}
                 </Typography>
             </CardContent>
         </Card>
-    );
+    )
 }

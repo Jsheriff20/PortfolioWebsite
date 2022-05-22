@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, memo } from "react"
 import { IconButton, Tooltip } from "@mui/material"
 import findContrastColour from "../../Utils/findContrastColour"
 import {
@@ -20,6 +20,8 @@ import {
     Linux,
     Hadoop,
     Spark,
+    Stripe,
+    SanityIo,
 } from "../../Media/Icons"
 
 import { Android, School, Article, Javascript, Security } from "@mui/icons-material"
@@ -44,6 +46,8 @@ const GetTagInfo = (tag, sx) => {
         Linux: ["#000"],
         Hadoop: ["#ff0", "#fffdbb", "#cc0", "#c0ca33", "#424242", "#ffc"],
         Spark: ["#e25a1c"],
+        Stripe: ["#6772e5"],
+        SanityIo: ["#f37369", "#f68d85", "#f14939", "#ecedee"],
     })
 
     let buttonSx = (
@@ -57,7 +61,7 @@ const GetTagInfo = (tag, sx) => {
             sx ? sx : {},
             {
                 backgroundColor: backgroundColor,
-                color: forgroundColour || findContrastColour(backgroundColor),
+                color: forgroundColour || findContrastColour("#fff"),
 
                 lineHeight: "1.2",
                 height: "35px",
@@ -71,7 +75,7 @@ const GetTagInfo = (tag, sx) => {
 
                 ":hover ": {
                     transform: "translateY(-5px)",
-                    background: hoverBackgroundColour || findContrastColour(hoverForegroundColour),
+                    background: hoverBackgroundColour || findContrastColour("#000"),
                     color: hoverForegroundColour,
                 },
             },
@@ -155,7 +159,7 @@ const GetTagInfo = (tag, sx) => {
                 />
             )
         case "Security":
-            return <Security sx={buttonSx("#fff", "#fff5f5 ", "#990000 ")} />
+            return <Security sx={buttonSx("#fff", "#fff5f5", "#990000")} />
         case "Tensorflow":
             return (
                 <TensorFlow
@@ -262,12 +266,32 @@ const GetTagInfo = (tag, sx) => {
                     sx={buttonSx("#7C7C7C")}
                 />
             )
+        case "Stripe":
+            return (
+                <Stripe
+                    onMouseOver={() => setColours({ ...colours, Stripe: ["#7C7C7C"] })}
+                    onMouseOut={() => setColours({ ...colours, Stripe: ["#6772e5"] })}
+                    colours={colours.Stripe}
+                    sx={buttonSx("#fff")}
+                />
+            )
+        case "Sanity.io":
+            return (
+                <SanityIo
+                    onMouseOver={() => setColours({ ...colours, SanityIo: ["#7C7C7C"] })}
+                    onMouseOut={() =>
+                        setColours({ ...colours, SanityIo: ["#f37369", "#f68d85", "#f14939", "#ecedee"] })
+                    }
+                    colours={colours.SanityIo}
+                    sx={buttonSx("#fff")}
+                />
+            )
         default:
             return <Firebase sx={buttonSx("#fff")} />
     }
 }
 
-const TagButton = ({ sx, ...props }) => {
+const TagButton = memo(({ sx, ...props }) => {
     let tagIcon = GetTagInfo(props.type, sx)
 
     return (
@@ -277,6 +301,6 @@ const TagButton = ({ sx, ...props }) => {
             </IconButton>
         </Tooltip>
     )
-}
+})
 
 export default TagButton

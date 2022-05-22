@@ -1,7 +1,6 @@
 import { SvgIcon } from "@mui/material"
 
 function ReactIcon(props) {
-    console.log(props.colours)
     let colours = props.colours || ["black"]
     return (
         <SvgIcon {...props} viewBox="0 0 48 48">

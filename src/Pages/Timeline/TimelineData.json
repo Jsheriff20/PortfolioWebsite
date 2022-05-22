@@ -4,55 +4,55 @@
         "date": "2021 - Present",
         "title": "Software Developer",
         "subtitle": "Connect Health",
-        "description": "description"
+        "description": "I currently work as a full stack developer, using React and JavaScript to build frontend websites and interfaces that are accessible to all patients. Manage NodeJS/ ExpressJS and .NET APIs which requires interaction with an SQL Server data warehouse where I develop SQL procedures and queries to process, transform, and manage data. In addition to new development, I also maintain, refactor, and upgrade existing systems."
     },
     {
         "type": "Education",
         "date": "2021",
         "title": "Graduated Abertay University",
         "subtitle": "Computing - Bachelor of Science",
-        "description": "description"
+        "description": "Whilst attending Abertay University I participated in the Computing Society as well as the Basketball 1st team. I left Abertay with a 1st Class BSc Honours Degree in Computing and a 4.3 out of 4.5 GPA. Additionally university allowed me to develop a range of soft skills such as independence, intuition, and ability to self teach."
     },
     {
         "type": "Work",
         "date": "2019 - 2020",
         "title": "Bartender & Waiter",
         "subtitle": "Apex Hotels",
-        "description": "description"
+        "description": "As a Bartender and Waiter I was required to serve and clean the tables at the Apex Hotels. The experience allowed me to develop good communication skills and management of both work and time."
     },
     {
         "type": "Work",
         "date": "2018 - 2019",
         "title": "Chef",
         "subtitle": "Pacamara Food & Drink",
-        "description": "description"
+        "description": "Working as a chef I developed time management and further teamwork which required communication and trust in for the food to be prepared correctly."
     },
     {
         "type": "Education",
         "date": "2018",
         "title": "Graduated Gateshead College",
         "subtitle": "Software Development - BTEC Extended Diploma",
-        "description": "description"
+        "description": "I graduated with a highest level (D*D*D*) BTEC Extended Diploma in Software Development. I was involved in a variety of projects, including a range of web, mobile, and desktop development. I developed a range of soft skills such as independence, intuition, and ability to self teach."
     },
     {
         "type": "Work",
         "date": "2016 - 2018",
         "title": "Chef & Waiter",
         "subtitle": "Cairn Hotel Group",
-        "description": "description"
+        "description": "As my first job, I built up my work ethic and determination for progression, where after a year I moved from a waiter to a chef and began specialise in being a Pizza chef at an italian restaurant"
     },
     {
         "type": "Education",
         "date": "2016",
         "title": "Graduated Lord Lawson Academy",
         "subtitle": "GCSEs",
-        "description": "description"
+        "description": "I completed my GCSEs with 9 General Certificates of Secondary Education: A to C."
     },
     {
         "type": "Work",
         "date": "2014 - 2018",
         "title": "Head Basketball Coach",
         "subtitle": "Gateshead/ Birtley Phoenix",
-        "description": "description"
+        "description": "As a head coach I was required to manage the team and provide coaching to the players. This role built up leadership skills within a team orientated environment"
     }
 ]

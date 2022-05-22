@@ -1,17 +1,21 @@
-import React from "react";
-import { Button } from "@mui/material";
-import theme from "../Themes";
+import React from "react"
+import { Button } from "@mui/material"
+import theme from "../Themes"
 
 const lightButtonStyle = {
-    backgroundColor: theme.palette.secondary.light,
+    backgroundColor: theme.palette.secondary.main,
     color: theme.palette.secondary.contrastText,
     marginTop: "1rem",
     fontSize: "1.2rem",
     transition: "0.5s",
-};
+
+    ":hover": {
+        backgroundColor: theme.palette.secondary.dark,
+    },
+}
 
 const LightButton = ({ sx, isSubmitting, ...otherProps }) => {
-    isSubmitting = isSubmitting ? isSubmitting : false;
+    isSubmitting = isSubmitting ? isSubmitting : false
 
     let style = Object.assign(
         isSubmitting
@@ -21,7 +25,7 @@ const LightButton = ({ sx, isSubmitting, ...otherProps }) => {
                   minWidth: "40px",
                   borderRadius: "40px",
                   border: "4px solid grey",
-                  borderLeft: `4px solid ${theme.palette.secondary.light}`,
+                  borderLeft: `4px solid ${theme.palette.secondary.main}`,
                   animation: "rotating 2s 0.4s linear infinite",
                   backgroundColor: "transparent",
                   color: "transparent",
@@ -54,9 +58,9 @@ const LightButton = ({ sx, isSubmitting, ...otherProps }) => {
             cursor: "pointer",
             transition: "all 0.25s ease",
         }
-    );
+    )
 
-    return <Button variant="contained" sx={[sx ? sx : {}, style]} {...otherProps} />;
-};
+    return <Button variant="contained" sx={[sx ? sx : {}, style]} {...otherProps} />
+}
 
-export default LightButton;
+export default LightButton

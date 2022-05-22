@@ -1,10 +1,10 @@
-import { Typography, Grid, Box, Card } from "@mui/material";
-import React from "react";
-import SocialMediaBoxHorizontal from "../../Components/SocialMediaBoxHorizontal";
-import SocialMediaBoxVertical from "../../Components/SocialMediaBoxVertical";
-import LightButton from "../../Components/Buttons/LightButton";
-import * as Style from "./Style";
-import openInNewTab from "../../Utils/openInNewTab";
+import { Typography, Grid, Box, Card } from "@mui/material"
+import React from "react"
+import SocialMediaBoxHorizontal from "../../Components/SocialMediaBoxHorizontal"
+import SocialMediaBoxVertical from "../../Components/SocialMediaBoxVertical"
+import LightButton from "../../Components/Buttons/LightButton"
+import * as Style from "./Style"
+import openInNewTab from "../../Utils/openInNewTab"
 
 export default function Intro(props) {
     return (
@@ -39,8 +39,17 @@ export default function Intro(props) {
                         <Grid container spacing={2}>
                             <Grid item xs={12} md={7}>
                                 <Typography sx={Style.subTitle}>About Me...</Typography>
-                                <Typography sx={Style.aboutMe}>
-                                    <p>
+                                <Typography variant="p" sx={Style.aboutMe}>
+                                    I am currently a Junior Developer for Connect Health with a 1st Class BSc Honours
+                                    Degree in Computing from Abertay University. I am a dedicated hard worker; this was
+                                    recognised in my first year in the industry when I was shortlisted to the top three
+                                    for the Dynamo Rising Star award. I am a strong team player and participate in
+                                    multiple team activities such as basketball. Additionally, I work just as strongly
+                                    as an individual which has been demonstrated through my multiple personal
+                                    programming projects and work efforts. Other interests include the stock market,
+                                    property, and crypto investing.
+                                    {/* <p>
+                                        Hi I
                                         Hi I am <strong>Jack Sheriff</strong>, a Software Developer based in the North
                                         East of England currently working for{" "}
                                         <strong onClick={() => openInNewTab("https://www.connecthealth.co.uk/")}>
@@ -67,7 +76,7 @@ export default function Intro(props) {
                                         demonstrated through my multiple personal programming projects and work efforts.
                                         I have interests in stock market, property, and crypto trading as well as team
                                         activities such as basketball.
-                                    </p>
+                                    </p> */}
                                 </Typography>
                             </Grid>
 
@@ -82,5 +91,5 @@ export default function Intro(props) {
                 </Grid>
             </Grid>
         </Box>
-    );
+    )
 }

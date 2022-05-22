@@ -1,11 +1,11 @@
 .vertical-timeline-element--work .vertical-timeline-element-content {
-    background-color: #003459;
-    color: #fff;
+    background-color: #5f85db;
+    color: #000;
 }
 
 .vertical-timeline-element--education .vertical-timeline-element-content {
-    background-color: #0e76a8;
-    color: #fff;
+    background-color: #90b8f8;
+    color: #000;
 }
 
 .vertical-timeline * {
@@ -247,8 +247,22 @@
     font-weight: 500;
 }
 
-.vertical-timeline-element-content .vertical-timeline-element-date {
-    display: inline-block;
+@media only screen and (max-width: 1170px) {
+    .vertical-timeline-element-content .vertical-timeline-element-date {
+        display: none;
+    }
+    .vertical-timeline-element-body-date {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1170px) {
+    .vertical-timeline-element-content .vertical-timeline-element-date {
+        display: inline-block;
+    }
+    .vertical-timeline-element-body-date {
+        display: none;
+    }
 }
 
 .vertical-timeline-element-content p {
@@ -296,7 +310,7 @@
     height: 0;
     width: 0;
     border: 7px solid transparent;
-    border-right: 7px solid #003459;
+    border-right: 7px solid #5f85db;
 }
 
 .vertical-timeline-element--education .vertical-timeline-element-content-arrow {
@@ -307,7 +321,7 @@
     height: 0;
     width: 0;
     border: 7px solid transparent;
-    border-right: 7px solid #0e76a8;
+    border-right: 7px solid #90b8f8;
 }
 
 .vertical-timeline--one-column-right .vertical-timeline-element-content-arrow {

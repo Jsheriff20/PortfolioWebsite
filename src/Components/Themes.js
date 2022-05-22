@@ -1,18 +1,19 @@
-import { createTheme } from "@mui/material/styles";
+import { createTheme } from "@mui/material/styles"
 
 const theme = createTheme({
+    typography: {
+        fontFamily: ["Arial", "sans-serif", '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"'].join(","),
+    },
     palette: {
         primary: {
-            lighter: "#818181",
-            light: "#2e343d",
-            main: "#23272e",
-            dark: "#181818",
-            darker: "#131314",
+            dark: "#26282B",
+            main: "#353941",
         },
         secondary: {
-            lighter: "#0356a4",
-            light: "#0e76a8",
-            main: "#003459",
+            contrastText: "#12120d",
+            light: "#90B8F8",
+            main: "#5F85DB",
+            dark: "#506cad",
         },
         orange: {
             main: "#c94f26",
@@ -37,6 +38,6 @@ const theme = createTheme({
             },
         },
     },
-});
+})
 
-export default theme;
+export default theme

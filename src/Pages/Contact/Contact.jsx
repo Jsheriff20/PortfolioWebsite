@@ -26,7 +26,7 @@ export default function Contact() {
     //                         content: Yup.string().min(10, "Too Short!").max(1000, "Too Long!").required("Required"),
     //                     })}
     //                     onSubmit={(values, { setSubmitting }) => {
-    //                         //display a toast of a sucessful submission
+    //                         //display a toast of a successful submission
     //                         setSubmitting(false)
     //                     }}
     //                 >

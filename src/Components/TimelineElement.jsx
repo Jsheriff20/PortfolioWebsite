@@ -1,7 +1,7 @@
 import { VerticalTimelineElement } from "react-vertical-timeline-component"
 import { Work, School } from "@mui/icons-material"
 import theme from "./Themes"
-import { Typography, Box } from "@mui/material"
+import { Typography, Box, Tooltip } from "@mui/material"
 
 export default function TimelineElement({ details }) {
     return (
@@ -14,7 +14,17 @@ export default function TimelineElement({ details }) {
                 background: details.type === "Work" ? theme.palette.secondary.main : theme.palette.secondary.light,
                 color: theme.palette.primary.contrastText,
             }}
-            icon={details.type === "Work" ? <Work /> : <School />}
+            icon={
+                details.type === "Work" ? (
+                    <Tooltip title="Work" placement="top">
+                        <Work />
+                    </Tooltip>
+                ) : (
+                    <Tooltip title="Education" placement="top">
+                        <School />
+                    </Tooltip>
+                )
+            }
         >
             <Box sx={{ margin: "-8px 0px 8px 0px" }}>
                 <Typography

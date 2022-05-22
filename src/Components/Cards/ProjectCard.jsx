@@ -1,4 +1,4 @@
-import { Card, CardMedia, CardContent, Typography, CardActions, IconButton, Box } from "@mui/material"
+import { Card, CardMedia, CardContent, Typography, CardActions, IconButton, Box, Tooltip } from "@mui/material"
 import React from "react"
 import { Info, GitHub } from "@mui/icons-material"
 import theme from "../Themes"
@@ -75,13 +75,23 @@ export default function ProjectCard({ sx, ...props }) {
                         Private Repo
                     </Typography>
                 ) : (
-                    <IconButton size="small" onClick={() => openInNewTab(props.data.githubLink)}>
-                        <GitHub sx={iconStyles} />
-                    </IconButton>
+                    <Tooltip title="Link to Github repository" placement="top">
+                        <IconButton size="small" onClick={() => openInNewTab(props.data.githubLink)}>
+                            <GitHub sx={iconStyles} />
+                        </IconButton>
+                    </Tooltip>
                 )}
-                <IconButton size="small" onClick={() => openInNewTab(props.data.infoLink)}>
-                    <Info sx={iconStyles} />
-                </IconButton>
+                {!!props.data.infoLink && (
+                    <Tooltip title="Link to more information" placement="top">
+                        <IconButton
+                            size="small"
+                            onClick={() => openInNewTab(props.data.infoLink)}
+                            disabled={!!props.data.infoLink}
+                        >
+                            <Info sx={iconStyles} />
+                        </IconButton>
+                    </Tooltip>
+                )}
             </CardActions>
 
             <CardContent>

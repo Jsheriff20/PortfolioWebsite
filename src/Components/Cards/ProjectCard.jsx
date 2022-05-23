@@ -33,6 +33,7 @@ export default function ProjectCard({ sx, ...props }) {
                     backgroundColor: theme.palette.primary.main,
                     color: theme.palette.primary.contrastText,
                     minHeight: "500px",
+                    maxWidth: "540px",
                 },
             ]}
             raised
@@ -49,7 +50,7 @@ export default function ProjectCard({ sx, ...props }) {
 
             <CardMedia
                 component="img"
-                height="190"
+                height="250"
                 image={props.data.image && props.data.image}
                 alt={props.data.imageAlt}
             />

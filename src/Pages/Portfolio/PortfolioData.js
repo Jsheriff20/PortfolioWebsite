@@ -3,6 +3,7 @@ import FinalProject from "../../Media/Images/FinalProject.jpg"
 import PortfolioWebsite from "../../Media/Images/PortfolioWebsite.jpg"
 import LocationScorer from "../../Media/Images/LocationScorerDiagram.jpg"
 import RpiPlantWateringSystemDiagram from "../../Media/Images/RpiPlantWateringSystemDiagram.jpg"
+import HadoopArchitecture from "../../Media/Images/HadoopArchitecture.jpg"
 
 export default function GetPortfolioData() {
     return [
@@ -119,7 +120,7 @@ export default function GetPortfolioData() {
         },
         {
             tags: ["Hadoop", "Spark", "University"],
-            image: "null",
+            image: HadoopArchitecture,
             imageAlt: "Hadoop Cluster architecture",
             githubLink: "",
             infoLink: "",

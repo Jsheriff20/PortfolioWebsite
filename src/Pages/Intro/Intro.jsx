@@ -23,9 +23,10 @@ export default function Intro(props) {
                         <LightButton
                             isSubmitting={false}
                             size="large"
-                            onClick={() =>
-                                (window.location.href = `${window.location.protocol}//${window.location.host}/#ContactMe`)
-                            }
+                            onClick={() => openInNewTab("mailto:JackASheriff@hotmail.co.uk")}
+                            // onClick={() =>
+                            //     (window.location.href = `${window.location.protocol}//${window.location.host}/#ContactMe`)
+                            // }
                         >
                             <strong>Contact Me</strong>
                         </LightButton>

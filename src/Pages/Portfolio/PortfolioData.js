@@ -1,4 +1,8 @@
 import ScraWebsiteThumbnail from "../../Media/Images/ScraWebsiteThumbnail.jpg"
+import FinalProject from "../../Media/Images/FinalProject.jpg"
+import PortfolioWebsite from "../../Media/Images/PortfolioWebsite.jpg"
+import LocationScorer from "../../Media/Images/LocationScorerDiagram.jpg"
+import RpiPlantWateringSystemDiagram from "../../Media/Images/RpiPlantWateringSystemDiagram.jpg"
 
 export default function GetPortfolioData() {
     return [
@@ -14,7 +18,7 @@ export default function GetPortfolioData() {
         },
         {
             tags: ["Android", "Java", "Firebase", "University", "Dissertation"],
-            image: "null",
+            image: FinalProject,
             imageAlt: "Android application home page",
             githubLink: "https://github.com/Jsheriff20/cognitiveSupportForElderlyApplication",
             infoLink: "",
@@ -44,13 +48,24 @@ export default function GetPortfolioData() {
         },
         {
             tags: ["React", "JavaScript", "NextJS", "CSS"],
-            image: "null",
+            image: PortfolioWebsite,
             imageAlt: "Portfolio website",
             githubLink: "https://github.com/Jsheriff20/PortfolioWebsite",
             infoLink: "",
             title: "Portfolio Website",
             description:
                 "Developed a simple React website to showcase my achievements, career and projects which has contributed to my exposure of a wide range of languages, frameworks, and technologies. This is a project that will continue to be refactored with the implementation of different features as it will be treated as a playground for new technologies.",
+        },
+        {
+            // tags: ["HTML", "CSS", "Bootstrap"],
+            tags: ["HTML", "CSS"],
+            image: "",
+            imageAlt: "Website home page",
+            githubLink: "https://github.com/Jsheriff20/Android-Quiz-Alarm",
+            infoLink: "",
+            title: "Durham Property Consultants",
+            description:
+                "During the 2019 Christmas break I worked with a client to develop a static website for their planned property business. The website was built using HTML, CSS and Bootstrap. This project was my first time working with a client and creating a production website.",
         },
         {
             tags: ["C#", "University"],
@@ -80,11 +95,11 @@ export default function GetPortfolioData() {
             infoLink: "",
             title: "Expression Recognition Using Artificial Intelligence",
             description:
-                "Developed a Deep Neural Network in Python using Tensorflow that was trained using thousands of images of people's faces showing different emotions using supervised learning. The finished result achieved an average of 84.63%.",
+                "Developed a Deep Neural Network in Python using Tensorflow that was trained using thousands of low quality images of people's faces showing different emotions using supervised learning. The finished result achieved an average of 84.63%.",
         },
         {
             tags: ["Artificial Intelligence", "C#", "Firebase", "University"],
-            image: "null",
+            image: LocationScorer,
             imageAlt: "Results from AI scored postcode",
             githubLink: "https://github.com/Jsheriff20/Artificial-Intelligence/tree/master/AI_house_location_scorer",
             infoLink: "",
@@ -94,8 +109,8 @@ export default function GetPortfolioData() {
         },
         {
             tags: ["Raspberry Pi", "Python", "AWS", "C", "HTML", "CSS", "PHP", "Linux", "University"],
-            image: "null",
-            imageAlt: "Plant watering system",
+            image: RpiPlantWateringSystemDiagram,
+            imageAlt: "Plant watering system architecture diagram",
             githubLink: "https://github.com/Jsheriff20/RPiAutoWateringSystem",
             infoLink: "",
             title: "Raspberry Pi Based Automatic Plant Watering System",

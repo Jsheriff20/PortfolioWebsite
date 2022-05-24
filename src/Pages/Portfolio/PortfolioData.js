@@ -4,6 +4,11 @@ import PortfolioWebsite from "../../Media/Images/PortfolioWebsite.jpg"
 import LocationScorer from "../../Media/Images/LocationScorerDiagram.jpg"
 import RpiPlantWateringSystemDiagram from "../../Media/Images/RpiPlantWateringSystemDiagram.jpg"
 import HadoopArchitecture from "../../Media/Images/HadoopArchitecture.jpg"
+import DurhamPropertyConsultants from "../../Media/Images/DurhamPropertyConsultants.jpg"
+import StringSearchAlgorithm from "../../Media/Images/StringSearchAlgorithm.jpg"
+import QuizAlarmApp from "../../Media/Images/QuizAlarmApp.jpg"
+import PalCompiler from "../../Media/Images/PalCompiler.jpg"
+import InstantMessagingApp from "../../Media/Images/InstantMessagingApp.jpg"
 
 export default function GetPortfolioData() {
     return [
@@ -20,7 +25,7 @@ export default function GetPortfolioData() {
         {
             tags: ["Android", "Java", "Firebase", "University", "Dissertation"],
             image: FinalProject,
-            imageAlt: "Android application home page",
+            imageAlt: "Android application screenshot of activities",
             githubLink: "https://github.com/Jsheriff20/cognitiveSupportForElderlyApplication",
             infoLink: "",
             title: "Application To Prevent Cognitive Decline In The Elderly",
@@ -29,8 +34,8 @@ export default function GetPortfolioData() {
         },
         {
             tags: ["C++", "University"],
-            image: "null",
-            imageAlt: "Benchmarking results",
+            image: StringSearchAlgorithm,
+            imageAlt: "Boyer Moore Algorithm Code Snippet",
             githubLink: "https://github.com/Jsheriff20/Multi-threadedStringSearchAlgorithmsApplication",
             infoLink: "",
             title: "Multi Threaded String Search Algorithms",
@@ -39,7 +44,7 @@ export default function GetPortfolioData() {
         },
         {
             tags: ["C#", "University"],
-            image: "null",
+            image: PalCompiler,
             imageAlt: "Compiler code snippet",
             githubLink: "https://github.com/Jsheriff20/PALLanguageCompiler",
             infoLink: "",
@@ -50,7 +55,7 @@ export default function GetPortfolioData() {
         {
             tags: ["React", "JavaScript", "NextJS", "CSS"],
             image: PortfolioWebsite,
-            imageAlt: "Portfolio website",
+            imageAlt: "Portfolio Website's page Header",
             githubLink: "https://github.com/Jsheriff20/PortfolioWebsite",
             infoLink: "",
             title: "Portfolio Website",
@@ -60,18 +65,18 @@ export default function GetPortfolioData() {
         {
             // tags: ["HTML", "CSS", "Bootstrap"],
             tags: ["HTML", "CSS"],
-            image: "",
-            imageAlt: "Website home page",
+            image: DurhamPropertyConsultants,
+            imageAlt: "Durham Property Consultants Website Header",
             githubLink: "https://github.com/Jsheriff20/Android-Quiz-Alarm",
             infoLink: "",
-            title: "Durham Property Consultants",
+            title: "Durham Property Consultants' Website",
             description:
                 "During the 2019 Christmas break I worked with a client to develop a static website for their planned property business. The website was built using HTML, CSS and Bootstrap. This project was my first time working with a client and creating a production website.",
         },
         {
             tags: ["C#", "University"],
-            image: "null",
-            imageAlt: "Windows messaging application sent and received messages",
+            image: InstantMessagingApp,
+            imageAlt: "Secure Instant Messaging App Class Diagram",
             githubLink: "https://github.com/Jsheriff20/SecureWindowsInstantMessagingApplication",
             infoLink: "",
             title: "Secure Windows Instant Messaging Application",
@@ -80,7 +85,7 @@ export default function GetPortfolioData() {
         },
         {
             tags: ["Android", "Java", "University"],
-            image: "null",
+            image: QuizAlarmApp,
             imageAlt: "Android Alarm Clock application",
             githubLink: "https://github.com/Jsheriff20/Android-Quiz-Alarm",
             infoLink: "",

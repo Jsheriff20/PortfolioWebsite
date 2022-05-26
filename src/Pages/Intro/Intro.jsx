@@ -11,35 +11,28 @@ export default function Intro(props) {
         <Box sx={Style.intro}>
             <Box sx={Style.backgroundImage} />
 
-            <Grid container sx={Style.titleGrid}>
-                <Grid item sx={12} md={5}></Grid>
+            <header>
+                <Grid container sx={Style.titleGrid}>
+                    <Grid item sx={12} md={5}></Grid>
 
-                <Grid item xs={12} md={7} sx={Style.profileInfo}>
-                    <Typography sx={Style.title}>
-                        <strong> Jack Sheriff </strong>
-                    </Typography>
-                    <Typography sx={[Style.job, Style.subTitle]}>Software Developer</Typography>
-                    <Box sx={Style.centerButton}>
-                        <LightButton
-                            isSubmitting={false}
-                            size="large"
-                            onClick={() => openInNewTab("mailto:JackASheriff@hotmail.co.uk")}
-                            // onClick={() =>
-                            //     (window.location.href = `${window.location.protocol}//${window.location.host}/#ContactMe`)
-                            // }
-                        >
-                            <strong>Contact Me</strong>
-                        </LightButton>
-                    </Box>
+                    <Grid item xs={12} md={7} sx={Style.profileInfo}>
+                        <Typography variant="h1" sx={Style.title}>
+                            <strong> Jack Sheriff </strong>
+                        </Typography>
+                        <Typography variant="h2" sx={[Style.job, Style.subTitle]}>
+                            Software Developer
+                        </Typography>
+                    </Grid>
                 </Grid>
-            </Grid>
-
+            </header>
             <Grid container sx={Style.aboutMeGrid}>
                 <Grid item xs={12}>
                     <Card sx={Style.infoBar} raised>
-                        <Grid container spacing={2}>
+                        <Grid container>
                             <Grid item xs={12} md={7}>
-                                <Typography sx={Style.subTitle}>About Me...</Typography>
+                                <Typography variant="h3" sx={Style.subTitle}>
+                                    About Me...
+                                </Typography>
                                 <Typography variant="p" sx={Style.aboutMe}>
                                     I am currently a Junior Developer for Connect Health with a 1st Class BSc Honours
                                     Degree in Computing from Abertay University. I am a dedicated hard worker; this was

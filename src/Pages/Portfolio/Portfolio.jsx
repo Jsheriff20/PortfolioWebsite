@@ -35,7 +35,9 @@ export default function Portfolio(props) {
     }
     return (
         <>
-            <Typography sx={Style.subTitle}>Noteworthy Projects</Typography>
+            <Typography variant="h3" sx={Style.subTitle}>
+                Noteworthy Projects
+            </Typography>
 
             <Grid container direction="row">
                 {portfolioData.map(

@@ -1,7 +1,7 @@
 import theme from "../../Components/Themes"
 
 export const subTitle = {
-    fontSize: "3.125rem",
+    fontSize: { xs: "36px", sm: "40px", md: "48px" },
     color: theme.palette.primary.contrastText,
     marginBottom: "30px",
     display: "flex",

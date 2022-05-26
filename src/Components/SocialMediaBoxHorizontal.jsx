@@ -1,9 +1,9 @@
-import React from "react";
-import { Box } from "@mui/material";
-import theme from "./Themes";
-import openInNewTab from "../Utils/openInNewTab";
+import React from "react"
+import { Box } from "@mui/material"
+import theme from "./Themes"
+import openInNewTab from "../Utils/openInNewTab"
 
-import SocialMediaButton from "./Buttons/SocialMediaButton";
+import SocialMediaButton from "./Buttons/SocialMediaButton"
 
 const MediaButtonsHorizontal = ({ sx, ...otherProps }) => {
     return (
@@ -38,7 +38,7 @@ const MediaButtonsHorizontal = ({ sx, ...otherProps }) => {
                 sx={{ marginRight: theme.spacing(2) }}
             />
         </Box>
-    );
-};
+    )
+}
 
-export default MediaButtonsHorizontal;
+export default MediaButtonsHorizontal

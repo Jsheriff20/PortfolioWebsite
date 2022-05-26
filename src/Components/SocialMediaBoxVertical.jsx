@@ -1,18 +1,19 @@
-import React from "react";
-import { Typography, Table, TableBody, TableCell, TableContainer, TableRow } from "@mui/material";
-import theme from "./Themes";
-import openInNewTab from "../Utils/openInNewTab";
-import SocialMediaButton from "./Buttons/SocialMediaButton";
+import React from "react"
+import { Typography, Table, TableBody, TableCell, TableContainer, TableRow } from "@mui/material"
+import theme from "./Themes"
+import openInNewTab from "../Utils/openInNewTab"
+import SocialMediaButton from "./Buttons/SocialMediaButton"
 
 //sx styles
 
 const iconTextCell = {
     display: "flex",
+    alignItems: "center !important",
     flexWrap: "wrap",
     float: "left",
     color: theme.palette.primary.contrastText,
     borderBottom: "none",
-};
+}
 
 const MediaButtonsVertical = ({ sx, ...otherProps }) => {
     return (
@@ -78,7 +79,7 @@ const MediaButtonsVertical = ({ sx, ...otherProps }) => {
                 </TableBody>
             </Table>
         </TableContainer>
-    );
-};
+    )
+}
 
-export default MediaButtonsVertical;
+export default MediaButtonsVertical

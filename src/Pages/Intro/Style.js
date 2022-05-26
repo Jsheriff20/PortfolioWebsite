@@ -14,6 +14,10 @@ export const profileInfo = {
     height: "426px",
     overflow: "hidden",
     position: "relative",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
 }
 
 export const infoBar = {
@@ -21,7 +25,7 @@ export const infoBar = {
     position: "relative",
     backgroundColor: theme.palette.primary.main,
     color: theme.palette.primary.contrastText,
-    padding: "1.25rem",
+    padding: "20px",
     boxShadow: 10,
 }
 
@@ -38,15 +42,16 @@ export const title = {
 export const job = {
     textAlign: "center",
     textShadow: "0px 6px 6px rgb(0 0 0 / 44%), 0px 10px 14px rgb(0 0 0 / 30%), 0px 4px 18px rgb(0 0 0 / 26%)",
+    marginTop: "16px",
 }
 
 export const aboutMe = {
-    fontSize: "1.25rem",
+    fontSize: "16px",
     fontFamily: "Georgia",
 }
 
 export const subTitle = {
-    fontSize: { xs: "1.9rem", sm: "2.5rem", md: "3.125rem" },
+    fontSize: { xs: "36px", sm: "40px", md: "48px" },
     color: theme.palette.primary.contrastText,
 }
 

@@ -1,10 +1,17 @@
 [
     {
         "type": "Work",
-        "date": "2021 - Present",
+        "date": "2022 - Present",
+        "title": "Software Developer",
+        "subtitle": "BBC",
+        "description": "I currently work as a full stack Software Developer, using Typescript to present, ingest and call Audience data on a NextJS websites for our stakeholders to use. My role involves working daily with with AWS services, SQL (Postgres), JS/TS, APIs, NextJS and providing suitable suggestions for further optimisation of the site."
+    },
+    {
+        "type": "Work",
+        "date": "2021 - 2022",
         "title": "Software Developer",
         "subtitle": "Connect Health",
-        "description": "I currently work as a full stack developer, using React and JavaScript to build frontend websites and interfaces that are accessible to all patients. Manage NodeJS/ ExpressJS and .NET APIs which requires interaction with an SQL Server data warehouse where I develop SQL procedures and queries to process, transform, and manage data. In addition to new development, I also maintain, refactor, and upgrade existing systems."
+        "description": "I worked as a full stack Junior Developer, using React and JavaScript to build frontend websites and interfaces that are accessible to all patients. Manage NodeJS/ ExpressJS and .NET APIs which requires interaction with an SQL Server data warehouse where I develop SQL procedures and queries to process, transform, and manage data. In addition to new development, I also maintain, refactor, and upgrade existing systems."
     },
     {
         "type": "Education",

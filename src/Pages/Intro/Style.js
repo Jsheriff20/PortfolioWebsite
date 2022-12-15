@@ -95,3 +95,20 @@ export const aboutMeGrid = {
     justifyContent: "center",
     alignItems: "center",
 }
+
+export const jobTitle = {
+    animationDuration: "10s",
+    animationFillMode: "both",
+    animation: "$rotating 1s ease-in-out",
+
+    "@keyframes rotating": {
+        from: {
+            opacity: "0",
+            transform: "translateY(-20px)",
+        },
+        to: {
+            opacity: "1",
+            transform: "translateY(0)",
+        },
+    },
+}

@@ -22,7 +22,7 @@ const MediaButtonsHorizontal = ({ sx, ...otherProps }) => {
             <SocialMediaButton
                 id="emailButton"
                 socialMediaType="email"
-                onClick={() => openInNewTab("mailto:JackASheriff@hotmail.co.uk")}
+                onClick={() => openInNewTab("mailto:Jackasheriff@hotmail.co.uk")}
                 sx={{ marginRight: theme.spacing(2) }}
             />
             <SocialMediaButton

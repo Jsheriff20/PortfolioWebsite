@@ -25,7 +25,7 @@ const MediaButtonsVertical = ({ sx, ...otherProps }) => {
                             component="th"
                             scope="row"
                             sx={iconTextCell}
-                            onClick={() => openInNewTab("mailto:JackASheriff@hotmail.co.uk")}
+                            onClick={() => openInNewTab("mailto:Jackasheriff@hotmail.co.uk")}
                         >
                             <SocialMediaButton
                                 id="emailButton"
@@ -34,7 +34,7 @@ const MediaButtonsVertical = ({ sx, ...otherProps }) => {
                             />
 
                             <Typography>
-                                <strong>JackASheriff@hotmail.co.uk</strong>
+                                <strong>Jackasheriff@hotmail.co.uk</strong>
                             </Typography>
                         </TableCell>
                     </TableRow>

@@ -68,14 +68,14 @@ export default function Intro(props) {
                                     About Me...
                                 </Typography>
                                 <Typography variant="p" sx={Style.aboutMe}>
-                                    I am currently a full stack Software Developer for BBC with a 1st Class BSc Honours
-                                    Degree in Computing from Abertay University. I am a dedicated hard worker; this was
-                                    recognised in my first year in the industry when I was shortlisted to for the Dynamo
-                                    Rising Star award. I am a strong team player and participate in multiple team
-                                    activities such as basketball, however, I work just as strongly as an individual
-                                    which has been demonstrated through my multiple personal programming projects and
-                                    work efforts. Other interests include the stock market, property, and crypto
-                                    investing.
+                                    With a 1st Class BSc Honours Degree in Computing from Abertay University, I am
+                                    currently a full stack software developer for BBC. In my first year in the industry,
+                                    I was shortlisted for the Dynamo Rising Star award, as my dedication and hard work
+                                    were recognised. I am a good team player and take part in a variety of team
+                                    activities, like basketball, but I also work very hard on my own, as evidenced by
+                                    the numerous personal programming projects and job endeavours I have undertaken.
+                                    Additional interests include real estate, investing in cryptocurrencies, and the
+                                    stock market.
                                 </Typography>
                             </Grid>
 
